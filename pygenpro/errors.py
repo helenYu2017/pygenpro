@@ -19,3 +19,9 @@ class IntegerError(GenTypeError):
 class SizeNotEqual(GenValueError):
     code = 'size.not_equal'
     msg_template = 'size must be equal'
+
+class DFTypeError(GenTypeError):
+    msg_template = 'value is not a valid DataFrame'
+
+class SeriesTypeError(GenTypeError):
+    msg_template = 'value is not a valid Series'
